@@ -1,0 +1,12 @@
+requires:
+{
+    api:
+    {
+        airVantage/le_avdata.api
+    }
+}
+
+sources:
+{
+    main.c
+}

@@ -1,0 +1,25 @@
+
+executables:
+{
+	assetData = ( assetDataComponent )
+}
+
+processes:
+{
+	run:
+	{
+		( assetData )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+
+start: auto
+bindings:
+{
+	assetData.assetDataComponent.le_avdata -> avcService.le_avdata
+}
+
+version: 1.0.0
+maxFileSystemBytes: 512K
